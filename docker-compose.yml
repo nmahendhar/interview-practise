@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   interview-mysql:
-    image: mysql:8.0
+    image: market.azurecr.io/mirror/mysql:8.0
     container_name: interview-mysql
     ports:
       - "3306:3306"
