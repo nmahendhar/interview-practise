@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  interview-mysql:
+    image: mysql:8.0
+    container_name: interview-mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: inventory_db
+    volumes:
+      - mysql_data:/var/lib/mysql
+volumes:
+  mysql_data:
