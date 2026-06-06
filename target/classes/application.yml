@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: inventory-service
+
+  # Relational In-Memory H2 Configuration (Bypasses local Docker registry blocks cleanly)
+  datasource:
+    url: jdbc:h2:mem:inventory_db;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+
+  # Hibernate ORM & JPA Settings
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  # Enable H2 Web Console UI for live interview database demonstrations
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: true
+
+server:
+  port: 8080

@@ -1,0 +1,10 @@
+com\hcl\lead\dto\ProductResponse.class
+com\hcl\lead\dto\ProductRequest.class
+com\hcl\lead\InventoryServiceApplication.class
+com\hcl\lead\repository\ProductRepository.class
+com\hcl\lead\mapper\ProductMapper.class
+com\hcl\lead\service\ProductService.class
+com\hcl\lead\mapper\ProductMapperImpl.class
+com\hcl\lead\controller\ProductRestController.class
+com\hcl\lead\exception\GlobalExceptionHandler.class
+com\hcl\lead\model\Product.class
